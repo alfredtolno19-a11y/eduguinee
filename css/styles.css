@@ -1,0 +1,77 @@
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #FFD700;
+  --font-family: 'Arial', sans-serif;
+  --border-radius: 5px;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: var(--secondary-color);
+  padding: 15px;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  padding: 15px;
+  float: left;
+  height: 100vh;
+  position: fixed;
+}
+
+.main-content {
+  margin-left: 260px;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.accessible {
+  outline: 2px solid var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .main-content {
+    margin-left: 0;
+  }
+}
